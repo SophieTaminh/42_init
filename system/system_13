@@ -1,0 +1,5 @@
+# 13. Trouvez une commande qui permet, en temps réel, de trouver les processus en
+# cours d’exécution
+#-------------------------------
+
+ps

@@ -1,0 +1,7 @@
+# 12. Déterminez la taille exacte de chaque dossier de /var d’une manière humainement
+# compréhensible suivi du chemin de celui-ci.
+# h donne la taille des fichiers
+# a pour voir les repertoires caches
+# --------------------------------------------
+
+du -h /var

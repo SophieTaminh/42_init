@@ -1,0 +1,8 @@
+# 22. Quelle commande permet d’ajouter un utilisateur local supplémentaire ?
+# -----------------------------------------------------------
+
+# si on n'est pas connecte sous root
+sudo adduser nom_utilisateur
+
+# si on est connecte sous root
+adduser nom_utilisaateur

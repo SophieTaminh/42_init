@@ -1,0 +1,26 @@
+Fichier qui contient les cles RSA des machines autorisees a se connecter via SSH
+~/.ssh/authorized_keys
+
+sur ma machine je lance 
+=> ssh-keygen
+de la genere les fichiers id_rsa et id_rsa.pub dans le repertoire .ssh
+puis je copie le fichier de ma machine sur ma VM
+=> ssh-copy-id -i /Users/staminh/.ssh/id_rsa.pub staminh@10.11.200.21
+
+Cela va creer le fichier 
+~/.ssh/authorized_keys
+
+
+Nota pour connaitre les adresses ifcongfig en0 ou ip a => inet
+
+Pour tester la possibilite de connectionm on fait
+=> ping adresse IP
+
+la commande pour se connecter sur la machine virtuelle 
+=> ssh 10.11.200.21
+mais on me demandera un mot de passe
+
+Pour se connecter avec cle RSA privee
+=> ssh -p 22 -i ~/.ssh/id_rsa staminh@10.11.200.21
+
+~/.ssh/authorized_keys

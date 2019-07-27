@@ -1,0 +1,11 @@
+arp -a
+# Identifiez et affichez les caractéristiques de l’interface Ethernet :
+# (a) Indiquez l’adresse de Broadcast
+# (b) Indiquez toutes les adresses IP qui font partie du même sous-réseau, 
+
+La commande arp permet de visualiser ou modifier la table du cache ARP d’une 
+#interface. Elle donne la correspondance entre une adresse IP et une adresse MAC.
+#Le cache ARP de l’interface est mis à jour à chaque nouvelle requête.
+
+ifconfig -L en0 | grep broadcast 
+arp -a

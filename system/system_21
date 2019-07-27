@@ -1,0 +1,17 @@
+# 21. Listez tout les utilisateurs réels de la machine
+# -----------------------------
+
+# who ne liste que les user connectes et non pqs les tous les user inscrits dans le systeme
+# Il faut utiliser le fichier /etc/passwd
+# Les informations sont separees par des :
+# - user
+# - mot de passe cripte
+# - numero qui identifie l'utilisateur (UID)
+# - numero qui identifie le groupe (GID)
+# - commentaire
+# - repertoire de connexion
+# - commande execute apres la connexion
+# UID > 999
+#chemin home
+
+cat /etc/passwd | grep home | cut -d: -f1

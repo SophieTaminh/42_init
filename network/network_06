@@ -1,0 +1,10 @@
+# Récupérez le path complet du fichier dans lequel est écrit 
+# l’adresse IP du serveur DNS que vous utilisez
+
+# permet de recuperer le nom du serveur et le nom de domaine du serveur
+# 10.51.1.42
+# 10.51.1.43rBMAoJA-
+# etc -> private/etc
+
+cat /etc/resolv.conf
+

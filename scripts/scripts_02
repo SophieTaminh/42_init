@@ -1,0 +1,29 @@
+# 2. Réalisez un script qui permet de supprimer un user LOGUÉ sur la machine
+# ---------------------------------------
+# suppresion de l'utilisateur dans les fichiers /etc/passwd et /etc/group
+# -r pour supprimer le compte et le repertoire personnel de l'utilisateur
+# -f pour forcer la suppresison si l'utilisateur est connecte
+# => userdel -r -f utilisateur
+# 
+# Malgré la suppression du compte, le répertoire personnel est conservé. L'ensemble des 
+# données qui y sont stockées est donc conservé. Par conséquent n'importe quel nouvel 
+# utilisateur créé ou ajouté ultérieurement avec le même UID/GID que le précédent 
+# propriétaire aura alors accès à ce répertoire et aux fichiers qui y sont stockés.
+# La suppression du répertoire personnel doit donc être effectuée manuellement. Si le 
+# répertoire est /home/utilisateur, la commande suivante fera le travail :
+# => sudo deluser utilisateur
+# sudo rm -R /home/utilisateur
+# attention rm est une commande dangereuse !! attention à la syntaxe
+
+#!/bin/sh
+if [ e $1 ]; then
+{
+	echo "Next time, enter a user, please"
+}
+else
+{
+	echo "the user to del is : " $1
+	skill -KILL -u $1
+	sudo deluser --remove-home $1
+}
+fi

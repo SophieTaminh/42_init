@@ -1,0 +1,14 @@
+# 19. Listez les services qui se lancent automatiquement lorsque la machine boot et
+# indiquez le nom donné à ce type de service
+# --------------------------------------------------------------------
+
+les services qui se lancent automatiquement lorsque la machine boot sont les fichiers qui se trouvent dans /etc/init.d
+=> ls -l /etc/init.d
+
+Il sont aussi listes dans les repertoires
+=> ls -l /etc/rc*.d
+Liens qui redirigent vers les ficheirs precedent, soit dans inti.d/*
+
+
+DAEMON
+Packages that include daemons for system services should place scripts in /etc/init.d to start or stop services at boot time or during a change of runlevel. 

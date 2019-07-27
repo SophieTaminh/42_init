@@ -1,0 +1,14 @@
+# 6. commande pour redemarrer le service ssh
+# ---------------
+
+# Si mon service est actif, je le coupe
+systemctl stop ssh
+
+
+# je verifie qu'il est bien arrete 
+# => systemctl status ssh (mot de passe admin)
+
+# je redemarrer
+=> systemctl start ssh
+je verifie qu'il tourne
+=> systemctl status ssh

@@ -1,0 +1,7 @@
+# Grâce a la question précédente et au reverse DNS retrouvez le nom de votre host
+
+dans la questionprecedente, j'ai mon ip 10.11.12.15
+
+=> nslookup 10.11.12.15 | grep name
+e2r12p15.42.fr
+

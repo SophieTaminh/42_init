@@ -1,0 +1,6 @@
+# Identify the MAC address of the Wi-Fi card
+
+# l'adresse MAC est l'adresse physique, elle est liee a la carte ethernet
+# touttes les machines ont une adresse MAC qui est fixee par le fabricant
+# wifi card = en1
+ifconfig -L en1 | grep "ether" | cut -d " " -f 2

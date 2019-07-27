@@ -1,0 +1,9 @@
+# 23. Expliquez comment se connecter en tant que ce nouvelle utilisateur. (En session
+#  graphique et en session ssh
+#  ------------------------
+
+ssh -p 22 -i ~/.ssh/id_rsa new_user@10.11.200.21
+
+# et en graphiquee
+
+ssh -X new_user@10.13.12.13

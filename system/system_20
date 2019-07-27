@@ -1,0 +1,18 @@
+# 20. Listez tous les utilisateurs existants sur la machine
+# ----------------------------------------------------
+# voir dans le fichier
+cat /etc/passwd
+
+
+# Pour ne sortir que les noms
+# awk - pattern scanning and processing language
+# -F: => prendre en compte le separateur :
+# '{print $ 1}' => ne prendre que la premiere variable 
+cat /etc/passwd | awk -F: '{print $1 }'
+
+# ou
+# on prend le premier terme et on delete tout ce qui est apres le :
+cut -f1 -d: /etc/passwd
+
+# ou
+cat /etc/passwd | cut -d: -f1

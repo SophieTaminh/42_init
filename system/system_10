@@ -1,0 +1,7 @@
+# 10. lister les tables de partitions des disques
+# --------------------------------------------
+
+dpkg -S fdisk
+
+# ou sous root
+# fdisk -l

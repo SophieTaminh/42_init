@@ -1,0 +1,13 @@
+# donner une commande qui determine l'etat de service ssh
+Quand je tape la commande 
+systemctl status ssh
+J'ai => sh.service could not be found
+
+donc j'installe le service ssh par la commande	
+sudo apt update && sudo apt install openssh-server
+apt-get install ssh
+
+j'essaie un autre jours, cela fonctionne
+systemctl status ssh
+
+Il est actif=> active : running

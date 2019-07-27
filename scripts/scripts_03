@@ -1,0 +1,20 @@
+#!/usr/bin/env 
+
+
+if [ e $1 ]; then
+{
+  echo "Next time, enter the software you want to install, please"
+}
+else
+{
+  echo "the software to install is : " $1
+  if [ -e /usr/bin/$1 ]; then
+    echo "$1 seems already installed"
+  else
+    su -c "apt install $1"
+    echo "
+  $1 has been installed! Remember that Sudo needs a restart to be effective."
+  fi
+}
+fi
+

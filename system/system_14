@@ -1,0 +1,8 @@
+# 14. Lancez en background la commande tail -f /var/log/syslog
+------------------------
+La commande tail permet d'afficher les dernieres lignes d'un fichier
+doit etre passee sous root
+su => pour se connecter en root
+ps aux | grep tail => pour verifier aue le process tourne
+root	1676	0.0	0.0	3916	584	pts/1	S+	19:44	0:00 tail -f /var/log/syslog
+

@@ -1,0 +1,5 @@
+# Il faut modifier le fichier 
+/etc/hostname
+
+# Il contient debian, qu'il faut remplacer par la nouvelle valeur
+

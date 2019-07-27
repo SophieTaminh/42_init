@@ -1,0 +1,4 @@
+# 02. pour modifier le nom du systeme, passer la commande	
+hostname new_name
+
+# Cette modifictiaon est temporaire car le fichier /ect/hostname n'a pas ete modifie

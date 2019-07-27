@@ -1,0 +1,6 @@
+# 15. Trouvez une commande qui permet de tuer le processus de la commande en background
+-----------------------------------------------
+ps aux | grep tail => pour verifier aue le process tourne
+root	1676	0.0	0.0	3916	584	pts/1	S+	19:44	0:00 tail -f /var/log/syslog
+le pid est 1676
+kill 1676 => pour tuer le processus

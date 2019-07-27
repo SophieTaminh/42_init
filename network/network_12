@@ -1,0 +1,31 @@
+# Trouvez l’IP qui vous a été assignée par le serveur dhcp
+
+# man networsetup
+
+#-listnetworkserviceorder
+#Displays a list of network services in the order they are contacted
+#for a connection, along with the corresponding port and device for each.
+#An asterisk (*) next to a service means the service is inactive.
+
+#➜  network networksetup -listnetworkserviceorder
+#An asterisk (*) denotes that a network service is disabled.
+#	(1) Ethernet
+#(Hardware Port: Ethernet, Device: en0)
+
+#	(2) Wi-Fi
+#(Hardware Port: Wi-Fi, Device: en1)
+
+#	(3) Bluetooth PAN
+#(Hardware Port: Bluetooth PAN, Device: en2)
+
+#	(4) Thunderbolt Bridge
+#(Hardware Port: Thunderbolt Bridge, Device: bridge0)
+
+
+ifconfig en0 | grep "inet " 
+
+
+#inet 10.11.12.15 netmask 0xffff0000 broadcast 10.11.255.255 
+# 11 => cluster 1
+# 12 => rang 12
+# 15 => place 15

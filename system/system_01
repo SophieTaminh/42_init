@@ -1,0 +1,6 @@
+# Le disque virtuel que j'ai cree se trouve dans le sgoinfre
+# je lance ma VM bedian, et pour connaitre la version
+
+# cat /etc/debian_version
+
+10.0
